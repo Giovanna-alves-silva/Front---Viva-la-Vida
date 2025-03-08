@@ -6,36 +6,51 @@ const NavBar = () => {
         <>
             <nav className={style.navbar}>
 
-                <ul className={style.list}> 
+                <Link to='/'>
+                    <img className={style.logo} src="./logoVivaLaVida.svg" alt="" />
+                </Link>
 
-                    <Link to='/'>
-                        <li className={style.item}> <img className={style.logo} src="./logo.png"></img></li> {/*home_img*/}
-                    </Link>
+                <div>
 
-                    <Link to='/'>
-                        <li className={style.item}> HOME </li> {/*home*/}
-                    </Link>
-                    
-                    <Link to='/cardapio'>
-                        <li className={style.item}> CARDÁPIO</li> {/*cardapio*/}
-                    </Link>
+                    <ul className={style.listIcon}>
 
-                    <Link to='/promocoes'>
-                        <li className={style.item}>PROMOÇÕES </li> {/*promoções*/}
-                    </Link>
+                        
+                        <li ><img className={style.icons} src="./Search.svg" alt="" /></li>
+                        
+                        <li ><img className={style.icons} src="./Profile.svg" alt="" /></li>
+                        
+                        <li ><img className={style.icons} src="./Home.svg" alt="" /></li>
+                        
+                    </ul>
 
-                    <Link to='/unidades'>
-                        <li className={style.item}>UNIDADES </li> {/*unidades*/}
-                    </Link>
+                    <ul className={style.list}>
+                        
+                        <Link to='/'>
+                           <li className={style.item}>Home</li>
+                        </Link>
 
-                </ul>
+                        <Link to='/cardapio'>
+                            <li className={style.item}>Cardápio</li>
+                        </Link>
+                        
+                        <Link to='/promocoes'>
+                            <li className={style.item}>Promoções</li>
+                        </Link>
+                        
+                        <Link to='unidades'>
+                                <li className={style.item}>Unidades</li>
+                        </Link>
+                        
+                    </ul>
 
+                </div>
 
             </nav>
 
             <Outlet />
+
         </>
     )
 }
 
-export default NavBar
+export default NavBar;

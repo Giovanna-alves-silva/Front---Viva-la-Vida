@@ -1,29 +1,48 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import './App.css'
-import Container from './Components/layout/Container'
-import Home from './Components/pages/Home'
-import NavBar from './Components/layout/NavBar'
 
+import Container from './components/layout/Container'
 
+import NavBar from './components/layout/Navbar'
+import Home from './components/pages/Home'
+import Cardapio from './components/pages/Cardapio'
+import Promocoes from './components/pages/Promocoes'
+import Unidades from './components/pages/Unidades'
 
 function App() {
 
   return (
     <>
+
       <div>
-        <BrowserRouter>
+
+        <BrowserRouter >
+
           <Container>
 
             <Routes>
+
               <Route path='/' element={<NavBar />}>
 
-                <Route path='/' element={<Home />}/>
-    
+                <Route path='/' element={<Home />} />
+
+                <Route path='/cardapio' element={<Cardapio />} />
+
+                <Route path='/promocoes' element={<Promocoes />} />
+
+                <Route path='/unidades' element={<Unidades />} />
+
               </Route>
+
             </Routes>
+
           </Container>
-       </BrowserRouter>
+
+        </BrowserRouter>
+
       </div>
+
     </>
   )
 }

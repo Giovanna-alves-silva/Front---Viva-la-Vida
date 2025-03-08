@@ -1,7 +1,15 @@
+*{
+    text-decoration: none;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     background-color: #ffce48;
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 22px;
+    height: 210px;
 }
 
 .list {
@@ -9,13 +17,32 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    margin-right: 220px;
 }
 
 .item {
-    margin-right: 1em;
+    margin-right: 70px;
     color: #135b3e;
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .logo {
     width: 197px;
+}
+
+.icons {
+    width: 35px;
+}
+
+.listIcon {
+    display: flex;
+    list-style: none;
+    align-items: right;
+    justify-content: right;
+    margin-bottom: 90px;
 }
