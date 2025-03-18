@@ -37,6 +37,7 @@
 
 .icons {
     width: 35px;
+    padding: 2px;
 }
 
 .listIcon {
@@ -46,3 +47,4 @@
     justify-content: right;
     margin-bottom: 90px;
 }
+

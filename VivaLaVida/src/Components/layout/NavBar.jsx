@@ -13,13 +13,16 @@ const NavBar = () => {
                 <div>
 
                     <ul className={style.listIcon}>
-
                         
                         <li ><img className={style.icons} src="./Search.svg" alt="" /></li>
                         
-                        <li ><img className={style.icons} src="./Profile.svg" alt="" /></li>
-                        
-                        <li ><img className={style.icons} src="./Home.svg" alt="" /></li>
+                        <Link to='/cadastro'>
+                            <li ><img className={style.icons} src="./Profile.svg" alt="" /></li>
+                        </Link>
+
+                        <Link to='/'>
+                            <li ><img className={style.icons} src="./Home.svg" alt="" /></li>
+                        </Link>
                         
                     </ul>
 

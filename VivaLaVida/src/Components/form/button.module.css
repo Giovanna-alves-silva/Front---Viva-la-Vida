@@ -1,0 +1,27 @@
+.button {
+    background-color: #f5ecdc;
+    border-radius: 20px;
+    width: 352px;
+    height: 30px;
+    margin-bottom: 18px;
+    border: none;
+}
+
+.button.secondary {
+    background-color: #FFCE4B;
+    border-radius: 20px;
+    border: 2px solid #135B3E;
+    color:#135B3E;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button.primary {
+    background-color: #F6921E;
+    border-radius: 20px;
+    border: 2px solid #135B3E;
+    color:#135B3E;;
+    font-size: 15px;
+    font-weight: bold;
+}
+
