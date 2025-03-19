@@ -22,19 +22,15 @@ Hoje, o Viva la Vida continua a ser um ícone da culinária mexicana na cidade, 
 <p align="left">
   💼 Funcionalidades: 
 </p>
+
 <ul>
   Fazer login;
-  Criação de conta;
-  Emitir pedidos;
-  Cancelar pedidos;
-  Favoritar pratos;
-  Edição de dados cadastrais;
-  Personalizar/atualizar pedidos;
-  Carrinho de pedidos;
+  Criação de cadastro de administrador;
+  Atualizar ou deletar usuários;
   API Geolocalização do estabelecimento;
-  API Via CEP - Local de entrega;
-  Avaliação do estabelecimento (upload das fotos dos pratos).
-
+  Adicionar, atualizar e deletar dados do cardápio;
+  Adicionar ou deletar uma promoção;
+  Adicionar, atualizar e deletar dados de Unidades;
 </ul>
 
 <p align="left">
