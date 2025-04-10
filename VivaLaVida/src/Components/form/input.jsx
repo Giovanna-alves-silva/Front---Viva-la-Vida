@@ -1,9 +1,10 @@
 import style from './input.module.css'
 
-function Input({type, name, placeholder, id, value, handlerChange}){
+function Input({type, text, name, placeholder, id, value, handlerChange}){
 return (
 
     <div>
+        <label htmlFor={name}>{text}</label>
         <input
             type={type}
             name={name}

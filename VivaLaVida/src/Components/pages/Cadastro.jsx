@@ -24,6 +24,30 @@ const Cadastro= () => {
     function submit(event){
         event.preventDefault();
         console.log(userData)
+
+        cadastrarUsuario(userData)
+    }
+
+    /* INSERÇÃO DE LIVRO */
+    function cadastrarUsuario(user) {
+
+        fetch('http://127.0.0.1:8000/cadastrarUsuario',{
+            method: 'POST',
+            mode:'cors',
+            headers: {
+                'Content-Type':'application/json',
+                'Access-Control-Allow-Origin':'*',
+                'Access-Controle-Allow-Headers':'*'
+            },
+            body: JSON.stringify(user)
+        }).then((response) => 
+            response.json()
+        ).then((respJSON) => {
+            console.log('TESTE: ' + respJSON);
+        }).catch((error)=> {
+            console.log('ERRO: ' + error);
+        })
+
     }
 
     return(
@@ -31,34 +55,34 @@ const Cadastro= () => {
             <div className={styles.divForm}>
 
             <h1>CADASTRO</h1>
-                <form>
+                <form onSubmit={submit}>
 
                     <Input
                         type='text'
-                        name= 'txt_email'
+                        name= 'email'
                         placeholder='E-mail'
-                        id='txt_email'
+                        id='email'
                         handlerChange={handlerChangeInput}
                     />
 
                     <Input
                         type='password'
-                        name= 'txt_senha'
+                        name= 'senha'
                         placeholder='Senha'
-                        id='txt_senha'
+                        id='senha'
                         handlerChange={handlerChangeInput}
-                    />
+                        />
 
                     <Input
                         type='password'
-                        name= 'txt_confirma_Senha'
+                        name= 'confirma_Senha'
                         placeholder='Confirmação da senha'
-                        id='txt_confirma_senha'
-                        handlerChange={handlerChangeInput}
+                        id='confirma_senha'
+                        // handlerChange={handlerChangeInput}
                     />
                     
                     <Button
-                        label = "Cadastrar" styleType="primary" onClick={submit}
+                        label = "Cadastrar" styleType="primary"
                     />
 
                     <Button
