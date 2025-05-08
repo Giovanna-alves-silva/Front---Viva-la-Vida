@@ -1,0 +1,23 @@
+inputDesc,
+textarea {
+    background-color: #f5ecdc;
+    border: 2px solid #135B3E;
+    color: #135B3E;
+    border-radius: 20px;
+    width: 330px;
+    height: 25px;
+    margin-bottom: 18px;
+    text-indent: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #135B3E;
+}
