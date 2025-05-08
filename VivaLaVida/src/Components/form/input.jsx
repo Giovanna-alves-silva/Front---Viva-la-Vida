@@ -14,6 +14,6 @@ return (
             onChange={handlerChange}
         />
     </div>
-)};
+)}
 
 export default Input;

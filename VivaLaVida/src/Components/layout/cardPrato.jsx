@@ -1,12 +1,12 @@
 import Button from "../form/button"
 
-const PlateCard = (nome, preco, imagem) => {
+const PratoCard = ({nome_prato, preco_prato, imagem}) => {
     return(
         <div>
 
-            <h3>{nome}</h3>
+            <h3>{nome_prato}</h3>
             <img src={imagem} alt="Imagem do prato: Burritos mexicanos" />
-            <p>{preco}</p>
+            <p>{preco_prato}</p>
 
             <Button label="Detalhe"/>
 
@@ -14,4 +14,4 @@ const PlateCard = (nome, preco, imagem) => {
     )
 }
 
-export default PlateCard;
+export default PratoCard;
