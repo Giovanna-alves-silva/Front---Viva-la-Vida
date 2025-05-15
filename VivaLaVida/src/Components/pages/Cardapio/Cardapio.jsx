@@ -1,22 +1,28 @@
-import { useNavigate } from 'react-router-dom';
-import { Outlet, Navigate } from 'react-router-dom';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import CategoriaSelect from '../../form/categoriaSelect';
 
 function Cardapio() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [categoria, setCategoria] = useState('pratos');
+
+  useEffect(() => {
+    const path = location.pathname.split('/')[2]; // 'pratos' ou 'listacardapio'
+    if (path) setCategoria(path);
+  }, [location.pathname]);
 
   const handleCategoriaChange = (e) => {
-    const categoria = e.target.value;
-    if (categoria) {
-      navigate(`/cardapio/${categoria}`);
-    }
+    const novaCategoria = e.target.value;
+    setCategoria(novaCategoria);
+    navigate(`/cardapio/${novaCategoria}`);
   };
 
   return (
     <div>
       <h1>Cardápio</h1>
-      <CategoriaSelect onChange={handleCategoriaChange} />
-      <Outlet />
+      <CategoriaSelect value={categoria} onChange={handleCategoriaChange} />
+      <Outlet context={{ setCategoria }} />
     </div>
   );
 }

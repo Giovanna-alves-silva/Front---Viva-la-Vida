@@ -28,7 +28,6 @@ const Cadastro= () => {
         cadastrarUsuario(userData)
     }
 
-    /* INSERÇÃO DE LIVRO */
     function cadastrarUsuario(user) {
 
         fetch('http://127.0.0.1:8000/cadastrarUsuario',{

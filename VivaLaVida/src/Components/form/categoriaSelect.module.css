@@ -1,14 +1,14 @@
 select {
-    width: 348px; /* Largura total */
-    padding: 10px; /* Espaçamento interno */
-    border: 2px solid #CD2B15; /* Cor da borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    background-color: #F5ECDC; /* Cor de fundo */
-    color: #135B3E; /* Cor do texto */
-    font-weight: bold; /* Peso da fonte */
-    appearance: none; /* Remove a aparência padrão do select */
-    outline: none; /* Remove o contorno ao focar */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 1116px;
+    padding: 10px;
+    border: 2px solid #CD2B15;
+    border-radius: 4px; 
+    background-color: #F5ECDC;
+    color: #135B3E;
+    font-weight: bold;
+    appearance: none; 
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilo para o select ao focar */

@@ -25,3 +25,35 @@
     font-weight: bold;
 }
 
+.button.third {
+    background-color: #F6921E;
+    border-radius: 5px;
+    border: 2px solid #F6921E;
+    color:#030c08;;
+    font-size: 15px;
+    font-weight: bold;
+    width: 180px;
+}
+
+.button.third:hover {
+    background-color: #ffa947;
+    border: 2px solid #ffa947;
+}
+
+.button.fourth {
+    background-color: #b64123;
+    border-radius: 5px;
+    border: 2px solid #b64123;
+    color:#030c08;;
+    font-size: 15px;
+    font-weight: bold;
+    width: 180px;
+    margin-left: 20px;
+}
+
+.button.fourth:hover {
+    background-color: #ff552b;
+    border: 2px solid #ff552b;
+}
+
+
