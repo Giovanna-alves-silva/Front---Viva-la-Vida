@@ -1,7 +1,8 @@
 import Button from "../form/button";
+import Button2 from "../Button";
 import styles from "./cardPrato.module.css";
 
-const ItemCard = ({ nome_prato, valor_prato, descricao_prato, imagem }) => {
+const ItemCard = ({ nome_prato, valor_prato, descricao_prato, imagem, cod_item }) => {
   return (
     <div className={styles.card}>
       <img src={imagem} alt={`Imagem de ${nome_prato}`} className={styles.imagem} />
@@ -12,8 +13,11 @@ const ItemCard = ({ nome_prato, valor_prato, descricao_prato, imagem }) => {
         {/* Exibe o valor já formatado, sem parse */}
         <p className={styles.valor}>{valor_prato}</p> 
         <div className={styles.buttons}>
-          <Button label="Editar" styleType="third" />
-          <Button label="Excluir" styleType="fourth" />
+          <Button2 
+            label='Detalhe'
+            router='/cardapio/descricaoItem/'
+            cod_item={cod_item}
+          />
         </div>
       </div>
     </div>

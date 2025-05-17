@@ -8,9 +8,14 @@ function Cardapio() {
   const [categoria, setCategoria] = useState('pratos');
 
   useEffect(() => {
-    const path = location.pathname.split('/')[2]; // 'pratos' ou 'listacardapio'
-    if (path) setCategoria(path);
+    const segments = location.pathname.split('/'); // ['/cardapio', 'descricaoItem', '1'] por exemplo
+    if (segments[2] && segments[2] !== 'descricaoItem') {
+      setCategoria(segments[2]);
+    }
   }, [location.pathname]);
+
+  // Aqui a lógica para esconder o select se estiver na rota descricaoItem
+  const esconderSelect = location.pathname.includes('/descricaoItem/');
 
   const handleCategoriaChange = (e) => {
     const novaCategoria = e.target.value;
@@ -21,7 +26,7 @@ function Cardapio() {
   return (
     <div>
       <h1>Cardápio</h1>
-      <CategoriaSelect value={categoria} onChange={handleCategoriaChange} />
+      {!esconderSelect && <CategoriaSelect value={categoria} onChange={handleCategoriaChange} />}
       <Outlet context={{ setCategoria }} />
     </div>
   );

@@ -56,4 +56,17 @@
     border: 2px solid #ff552b;
 }
 
+.button.fifith {
+    background-color: #F6921E;
+    border: 2px solid #F6921E;
+    font-weight: bold;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.button.fifith:hover {
+    background-color: #ffc17b;
+    border: 2px solid #ffc17b;
+}
+
 

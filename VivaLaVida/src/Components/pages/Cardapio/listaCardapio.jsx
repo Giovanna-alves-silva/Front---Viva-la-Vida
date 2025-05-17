@@ -45,11 +45,12 @@ function ListaCardapio() {
                         
                         
                         <ItemCard
-                            key={item.cod_item}
+                            key={item.id_prato}
                             nome_prato={item.nome_prato}
                             descricao_prato={item.descricao_prato}
                             valor_prato={item.valor_prato}
                             imagem={burritos}
+                            cod_item={item.id_prato}
                         />
                         
                     ))

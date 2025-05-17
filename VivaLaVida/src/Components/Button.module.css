@@ -1,0 +1,21 @@
+.buttonContainer{
+    width: 100%;
+}
+button{
+    background-color: #fc9623;
+    border: 2px #fc9623;
+    font-weight: bold;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffb866;
+    border: 2px #ffb866;
+}
+
+button.primary {
+    background-color: #fc4e23;
+    border-color: #fc4e23;
+}
