@@ -15,6 +15,7 @@ import ListaCardapio from './Components/pages/Cardapio/listaCardapio';
 import Footer from './Components/layout/Footer';
 import DescricaoItem from './Components/pages/Cardapio/DescricaoItem';
 import AtualizarItem from './Components/pages/Cardapio/AtualizarItem';
+import DeletarItem from './Components/pages/Cardapio/DeletarItem';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path='listacardapio' element={<ListaCardapio />} />
                 <Route path='descricaoItem/:id_item' element={<DescricaoItem />} />
                 <Route path='alterarItem/:id_item' element={<AtualizarItem />} />
+                <Route path='deletarItem/:id_item' element={<DeletarItem />} />
               </Route>
 
               <Route path='/promocoes' element={<Promocoes />} />

@@ -64,9 +64,9 @@ const DescricaoItem = () => {
 
                         <Button2
                             label='EXCLUIR'
-                            router='/excluirItem'
-                            id_item={item.id_prato}
-                            />
+                            router='/cardapio/deletarItem/'
+                            cod_item={item.id_prato}
+                        />
 
                     </div>
 
