@@ -8,14 +8,14 @@ import burritos from '../../../assets/burritos-mexicanos.png'
 
 const DescricaoItem = () => {
 
-    const {cod_item} = useParams();
-    console.log('ID:' + cod_item);
+    const {id_item} = useParams();
+    console.log('ID:' + id_item);
 
     const[item, setItem] = useState({});
 
     useEffect(()=>{
 
-        fetch(`http://localhost:8000/listagemItens/${cod_item}`, {
+        fetch(`http://localhost:8000/listagemItens/${id_item}`, {
             method: 'GET',
             mode:'cors',
             headers: {
@@ -53,17 +53,19 @@ const DescricaoItem = () => {
                     </span>
 
                     <div className={style.container_buttons}>
-                        <Button2 
-                            label='EDITAR'
-                            router='/atualizarItem/'
-                            cod_livro={item.cod_item}
-                            
-                            />
+
+                        <Button2
+                            label="EDITAR"
+                            router="/cardapio/alterarItem/"
+                            cod_item={item.id_prato}
+                        />
+
+
 
                         <Button2
                             label='EXCLUIR'
                             router='/excluirItem'
-                            cod_livro={item.cod_item}
+                            id_item={item.id_prato}
                             />
 
                     </div>

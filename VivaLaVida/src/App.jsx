@@ -14,6 +14,7 @@ import NavBar from './Components/layout/NavBar';
 import ListaCardapio from './Components/pages/Cardapio/listaCardapio';
 import Footer from './Components/layout/Footer';
 import DescricaoItem from './Components/pages/Cardapio/DescricaoItem';
+import AtualizarItem from './Components/pages/Cardapio/AtualizarItem';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
                 <Route index element={<Navigate to="pratos" replace />} />
                 <Route path='pratos' element={<Pratos />} />
                 <Route path='listacardapio' element={<ListaCardapio />} />
-                <Route path='descricaoItem/:cod_item' element={<DescricaoItem />} />
+                <Route path='descricaoItem/:id_item' element={<DescricaoItem />} />
+                <Route path='alterarItem/:id_item' element={<AtualizarItem />} />
               </Route>
 
               <Route path='/promocoes' element={<Promocoes />} />

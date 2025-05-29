@@ -28,7 +28,7 @@ const CadastroPrato = () => {
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
-        'Access-Controle-Allow-Headers': '*'
+        'Access-Control-Allow-Headers': '*'
       },
       body: JSON.stringify(prato)
     })

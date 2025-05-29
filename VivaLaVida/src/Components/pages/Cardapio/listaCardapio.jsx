@@ -5,8 +5,6 @@ import burritos from '../../../assets/burritos-mexicanos.png'
 import ItemCard from "../../layout/cardPrato";
 import ContainerPrato from "../../layout/ContainerPrato";
 
-
-
 function ListaCardapio() {
 
     const [itens, setItens] = useState([]);

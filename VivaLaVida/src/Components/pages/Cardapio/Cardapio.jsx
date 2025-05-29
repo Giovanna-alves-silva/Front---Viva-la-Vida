@@ -15,7 +15,8 @@ function Cardapio() {
   }, [location.pathname]);
 
   // Aqui a lógica para esconder o select se estiver na rota descricaoItem
-  const esconderSelect = location.pathname.includes('/descricaoItem/');
+  const esconderSelect = location.pathname.includes('/descricaoItem/') || location.pathname.includes('/alterarItem/');
+
 
   const handleCategoriaChange = (e) => {
     const novaCategoria = e.target.value;
